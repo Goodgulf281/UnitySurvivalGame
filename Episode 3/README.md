@@ -6,7 +6,7 @@ Each file is documented in the Procedural Terrain Documentation Folder
 
 ## Files in This Solution
 
-| File | Purpose | Documentation
+| File | Purpose |
 |---|---|
 | `TerrainStreamingController.cs` | Chunk load/unload orchestration, player tracking |
 | `StreamingTerrainGeneratorJobs.cs` | Schedules Jobs-based heightmap generation per chunk |
