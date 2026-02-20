@@ -2,11 +2,13 @@
 
 Start here [Overview](./Overview_StreamingTerrainSolution.md)
 
+Each file is documented in the Procedural Terrain Documentation Folder
+
 ## Files in This Solution
 
 | File | Purpose | Documentation
-|---|---|---|
-| `TerrainStreamingController.cs` | Chunk load/unload orchestration, player tracking | [readme](./Procedural Terrain Documentation/TerrainStreamingController.md)
+|---|---|
+| `TerrainStreamingController.cs` | Chunk load/unload orchestration, player tracking |
 | `StreamingTerrainGeneratorJobs.cs` | Schedules Jobs-based heightmap generation per chunk |
 | `TerrainHeightJob.cs` | Burst-compiled parallel job — full height pipeline |
 | `TerrainDataPool.cs` | Object pool for `TerrainData` instances |
