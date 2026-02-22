@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace Goodgulf.TerrainUtils
 {
-public class PrefabPlacementConfig : ScriptableObject
+    [CreateAssetMenu(menuName = "Terrain/Prefab Placement Config")]
+    public class PrefabPlacementConfig : ScriptableObject
     {
         [System.Serializable]
         public class PrefabPlacementRule
@@ -105,3 +106,4 @@ public class PrefabPlacementConfig : ScriptableObject
     }
     
 }
+
