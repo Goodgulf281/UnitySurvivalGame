@@ -9,10 +9,10 @@ A custom A\* pathfinding system for Unity 6 that builds and maintains a navigati
 | File | Role |
 |---|---|
 | [`PathfindingGraph.md`](Documentation/PathfindingGraph.md) | Core data structures — `NodeData`, `GraphConfig`, `DirtyRegion`, and the double-buffered graph container |
-| [`GraphRebuildJobs.md`](GraphRebuildJobs.md) | Burst-compiled jobs for full and partial graph rebuilds, plus the physics obstacle overlay |
-| [`AStarSearch.md`](AStarSearch.md) | The A\* search algorithm, endpoint snapping, heuristic, and string pulling |
-| [`TerrainGraphIntegration.md`](TerrainGraphIntegration.md) | MonoBehaviour hub — chunk registration, job scheduling, streamed overlay, obstacle cache |
-| [`PathfindingAgent.md`](PathfindingAgent.md) | NPC agent — move-to, patrol, LOS, leader/follower flocking, terrain height snapping |
+| [`GraphRebuildJobs.md`](Documentation/GraphRebuildJobs.md) | Burst-compiled jobs for full and partial graph rebuilds, plus the physics obstacle overlay |
+| [`AStarSearch.md`](Documentation/AStarSearch.md) | The A\* search algorithm, endpoint snapping, heuristic, and string pulling |
+| [`TerrainGraphIntegration.md`](Documentation/TerrainGraphIntegration.md) | MonoBehaviour hub — chunk registration, job scheduling, streamed overlay, obstacle cache |
+| [`PathfindingAgent.md`](Documentation/PathfindingAgent.md) | NPC agent — move-to, patrol, LOS, leader/follower flocking, terrain height snapping |
 
 ---
 
@@ -192,4 +192,4 @@ TerrainGraphIntegration.Instance.InvalidateHeightmapCache(chunkCoord);
 | Agent oscillates between two waypoints | `HandleMoveTo` re-pathing while path is valid | Guard `RequestPath` with `pathExhausted && _pathCooldown <= 0f` |
 | Agent shoots upward | `GetTerrainY()` falling through to `position.y` fallback | Set `TerrainLayerMask` to include terrain layer |
 | Agent does not move (FollowLeader) | `StartingMode` not set to `FollowLeader` in Inspector | Set mode, assign `Leader`, set `IsLeader = false` |
-| Overlay takes minutes | 2D iteration not used, iterating all 42M flat indices | Use `_overlayNodeX`/`_overlayNodeZ` 2D cursor in `TickOverlay()` |
+
