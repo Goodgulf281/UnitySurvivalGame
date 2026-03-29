@@ -8,7 +8,7 @@ A custom A\* pathfinding system for Unity 6 that builds and maintains a navigati
 
 | File | Role |
 |---|---|
-| [`PathfindingGraph.md`](PathfindingGraph.md) | Core data structures — `NodeData`, `GraphConfig`, `DirtyRegion`, and the double-buffered graph container |
+| [`PathfindingGraph.md`](Documentation\PathfindingGraph.md) | Core data structures — `NodeData`, `GraphConfig`, `DirtyRegion`, and the double-buffered graph container |
 | [`GraphRebuildJobs.md`](GraphRebuildJobs.md) | Burst-compiled jobs for full and partial graph rebuilds, plus the physics obstacle overlay |
 | [`AStarSearch.md`](AStarSearch.md) | The A\* search algorithm, endpoint snapping, heuristic, and string pulling |
 | [`TerrainGraphIntegration.md`](TerrainGraphIntegration.md) | MonoBehaviour hub — chunk registration, job scheduling, streamed overlay, obstacle cache |
